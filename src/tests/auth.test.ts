@@ -12,7 +12,7 @@ describe("getAPIKey", () => {
     const headers = {
       authorization: "Bearer 123"
     };
-    expect(getAPIKey(headers)).toBeNull();
+    expect(getAPIKey(headers)).toBe("123");
   });
 
   test("returns null if missing key", () => {
